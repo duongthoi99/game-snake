@@ -1,0 +1,31 @@
+<canvas id="myCanvas" width="500" height="500"></canvas>
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+
+
+  
+  // Create a gradient
+  var gradient = ctx.createLinearGradient(0, 0, 500, 500);
+  gradient.addColorStop(0, "red"); 
+  gradient.addColorStop(0.5, "yellow");
+  gradient.addColorStop(1, "green");
+  
+  // Draw the heat map
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, 500, 500);
+  var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+// Create a gradient
+var gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+gradient.addColorStop(0, "red");
+gradient.addColorStop(0.5, "yellow");
+gradient.addColorStop(1, "green");
+
+// Draw the heat map
+ctx.fillStyle = gradient;
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+  </script>
+  
